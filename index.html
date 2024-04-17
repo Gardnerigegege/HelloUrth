@@ -15,8 +15,31 @@
     <div class="wolff-quote">
         placeholder
     </div>
-    <div class="wolff-quote">
-      placeholder
+    <div class="fields">
+      <div class="field">
+          <label for="first-name">first name</label>
+          <input type="text" id="first-name" name="firstName">
+      </div>
+      <div class="field">
+          <label for="last-name">last name</label>
+          <input type="text" id="last-name" name="lastName">
+      </div>
+      <div class="field">
+          <label for="email">email</label>
+          <input type="email" id="email" name="email">
+      </div>
+      <div class="field">
+          <label for="phone-number">phone number</label>
+          <input type="number" id="phone-number" name="phoneNumber">
+      </div>
+      <div class="field">
+          <label for="password">password</label>
+          <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[A-Z]).{8,}">
+      </div>
+      <div class="field">
+          <label for="confirm-password">confirm password</label>
+          <input type="password" id="confirm-password" name="confirmPassword">
+      </div>
   </div>
 
     
