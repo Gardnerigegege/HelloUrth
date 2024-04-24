@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Functions: Task 1</title>
+    <style>
+     body {
+        background:tan;
+      }
+      p {
+        padding:200px auto;
+        color:darkgreen;
+        font-family: fantasy, serif;
+        font-size:3em;
+        text-align:center;
+
+      }
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+    <p>Scratcher</p>
+    <p>
+        <button id="scratchBtn">Scratch Me</button>
+    </p>
+
+  </body>
+  <script>
+    let Randy = Math.random();
+    console.log(Randy);
+//
+    const myArray = ["Tif", "loves", "Makoda", "Dressing"]
+    const newArray = myArray.join("");
+    console.log(newArray);
+//
+
+                    function ask(question, yes, no) {
+                        if (confirm(question)) yes()
+                        else no();
+                    }
+                    function showOk() {
+                        alert("YES!")
+                    };
+                    function showCancel() {
+                        alert("NO!")
+                    };
+                    ask("Is it true?", showOk, showCancel)
+    
+//
+
+
+    //document.getElementById(scratchBtn).onclick = function() {
+    //    alert("hello!");
+    //};
+  </script>
+
+</html>
