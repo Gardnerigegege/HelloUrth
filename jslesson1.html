@@ -1,18 +1,71 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>JSLesson1</title>
-</head>
-<body>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Functions: Task 1</title>
+    <style>
+     body {
+        background:tan;
+      }
+      p {
+        padding:200px auto;
+        color:darkgreen;
+        font-family: fantasy, serif;
+        font-size:3em;
+        text-align:center;
+
+      }
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+    <p>My Answers to Odin Lesson on Functions</p>
+    
+
+  </body>
   <script>
-    let max = 57;
-    let act = max - 13;
-    let perc = act / max;
+//
+function add7(numba) { 
+  return numba + 7 
+
+}
+
+console.log(add7(13))
+//
+function multy(x, y) { 
+  return x * y
+
+}
+
+console.log(multy(10, 3))
+//
 
 
-    // Your JavaScript goes here!
-    console.log(perc)
+
+function capitalize(word) {
+  word = word.toLowerCase();
+  return word[0].toUpperCase() + word.slice(1);
+
+
+}
+console.log(capitalize("wordtime"));
+console.log(capitalize("woRDTime"));
+console.log(capitalize("WORDTIMe"));
+
+
+//
+function lastLet(mystring) {
+  return mystring.slice(-1)
+
+}
+console.log(lastLet("wordtime"));
+
+
+
   </script>
-</body>
+
 </html>
