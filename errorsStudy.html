@@ -9,30 +9,25 @@
   </head>
   <body>
     <h1>HELLO Urth</h1>
+    <p id="demo"></p>
  </body>
 
 
 <script>
-//var is not defined
-const a = "Hello";
-const b = "World";
 
-console.log(c);
 
-//var is not defined
-const a = 5;
-const b = 10;
-
-function add() {
-  return c;
+catch(err) {
+  document.getElementById("demo").innerHTML = console.log;
 }
 
-function print() {
-  add();
+try {
+  throw new ReferenceError("Hello");
+} catch (e) {
+  console.log(e instanceof ReferenceError); // true
+  console.log(e.message); // "Hello"
+  console.log(e.name); // "ReferenceError"
+  console.log(e.stack); // Stack of the error
 }
-
-print();
-
 
 
 
